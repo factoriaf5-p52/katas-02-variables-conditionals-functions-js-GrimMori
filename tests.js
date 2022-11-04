@@ -67,7 +67,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "KO").to.be.true;
+        expect(result === "KO").to.be.true; // la respuesta es KO porque el valor de result es definido al inicio fuera del bloque if
     })
 
     it("comparando cadenas (strings)", () => {
@@ -83,7 +83,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "pikachu").to.be.true;
+        expect(result === "pikachu").to.be.true; // a es menor debido a su valor ascii?
     })
 
     it("Interpolación de cadenas (strings) (1)", () => {
@@ -100,7 +100,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "Pizza con Pepperoni").to.be.true; // 14%5=4
     })
 
     it("Interpolación de cadenas (strings) (2)", () => {
@@ -117,7 +117,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "Pizza con Piña").to.be.true; // 14%7=0
     })
 })
 
@@ -151,7 +151,7 @@ describe("Funciones en JS", () => {
 
 
         // substituye "???" por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === 28).to.be.true;
     })
 
     it("Cuál es el resultado de invocar la función? (2)", () => {
@@ -160,16 +160,16 @@ describe("Funciones en JS", () => {
 
 
         // substituye "???" por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "Son Pinky y Cerebro").to.be.true;
     })
 
     it("Cuál es el resultado de invocar la función? (3)", () => {
 
         // substituye "???" por el resultado en cada caso
-        expect(h("khaleesi mother of dragons breaker of chains") === "???").to.be.true;
-        expect(h("sarah") === "???").to.be.true;
-        expect(h("bob") === "???").to.be.true;
-        expect(h("robertson") === "???").to.be.true;
+        expect(h("khaleesi mother of dragons breaker of chains") === "very long").to.be.true;
+        expect(h("sarah") === "adecquate").to.be.true;
+        expect(h("bob") === "too short").to.be.true;
+        expect(h("robertson") === "long").to.be.true;
     })
 
 })
